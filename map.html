@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotspot Map 2025-07-23</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+    #map { height: 100vh; width: 100vw; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map').setView([0, 110], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18
+    }).addTo(map);
+    
+    L.marker([-4.35287, 105.47455])
+      .addTo(map)
+      .bindPopup("Lokasi: Lampung - Anugerah<br>Confidence: 49<br>Tanggal: 2025-07-22");
+  
+    L.marker([-2.03287, 105.61898])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 89<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.97512, 105.69601])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 84<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.90662, 105.73145])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 77<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.91825, 105.65125])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 45<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.81435, 105.53245])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 64<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.82756, 105.44248])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 78<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.83419, 105.39732])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 80<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.71416, 105.52051])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 78<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.85591, 105.61481])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 66<br>Tanggal: 2025-07-22");
+  
+    L.marker([-1.85351, 105.60781])
+      .addTo(map)
+      .bindPopup("Lokasi: Kalsel - Tanah Bumbu<br>Confidence: 47<br>Tanggal: 2025-07-22");
+  
+    L.marker([1.99586, 117.3881])
+      .addTo(map)
+      .bindPopup("Lokasi: Katim - KKS SEGAH<br>Confidence: 66<br>Tanggal: 2025-07-23");
+  
+  </script>
+</body>
+</html>
